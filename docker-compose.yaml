@@ -1,0 +1,13 @@
+version: "3"
+   
+services:
+    landing_front:
+        build:
+            context: .
+            dockerfile: dockerfile
+        container_name: landing_frontend
+        command: npm run dev
+        volumes:
+            - .:/usr/src/app/
+        ports:
+            - "5157:5157"
