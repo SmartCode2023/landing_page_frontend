@@ -1,6 +1,9 @@
 # Base image
 FROM node:14-alpine
 
+ARG NODE_ENV=development
+ENV NODE_ENV ${NODE_ENV}
+
 # Set the working directory inside the container
 WORKDIR /app
 

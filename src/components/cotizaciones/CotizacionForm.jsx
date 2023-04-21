@@ -5,6 +5,12 @@ import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import axios from "axios";
+import API_ENDPOINT from '../../../config.js';
+
+
+
+console.log("The endopint :")
+console.log(API_ENDPOINT)
 
 const CotizacionForm = ({ setStep, setCotizacion }) => {
   const [fechaViaje, setFechaViaje] = useState("");
@@ -33,7 +39,7 @@ const CotizacionForm = ({ setStep, setCotizacion }) => {
       servicioCarga: isCarga,
     };
     const cotizacion = await axios.post(
-      "http://localhost:5100/api/v1/cotizaciones",
+      `${API_ENDPOINT}/cotizaciones`,
       newCotizacion
     );
     setCotizacion(cotizacion.data.cotizacion);
