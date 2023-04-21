@@ -1,0 +1,28 @@
+.inicio-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.inicio-info-container {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  border-left: 4px solid #a9bf04;
+  display: flex;
+  overflow: hidden;
+}
+
+.inicio-text {
+  align-self: center;
+  align-items: center;
+  width: 30%;
+}
+
+.inicio-image {
+  width: 70%;
+}
+
+.inicio-image img {
+  height: 500px;
+}
