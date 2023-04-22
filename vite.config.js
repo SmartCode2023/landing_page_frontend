@@ -10,7 +10,7 @@ export default defineConfig({
   },
   define: {
     'process.env': {
-      COTIZACIONES_ENDPOINT_TEST: 'http://localhost:5200/api/v1',
+      COTIZACIONES_ENDPOINT_TEST: 'http://localhost:5100/api/v1',
       COTIZACIONES_ENDPOINT_PROD: 'http://10.43.101.108:5200/api/v1',
     },
   },

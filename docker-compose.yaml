@@ -11,3 +11,5 @@ services:
             - .:/usr/src/app/
         ports:
             - "5157:5157"
+
+                    

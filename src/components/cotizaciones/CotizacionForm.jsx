@@ -39,8 +39,8 @@ const CotizacionForm = ({ setStep, setCotizacion }) => {
       servicioCarga: isCarga,
     };
     const cotizacion = await axios.post(
-      'http://10.43.101.114:5100/api/v1/cotizaciones',
-      // `${API_ENDPOINT}/cotizaciones`,  
+      //'http://10.43.101.114:5100/api/v1/cotizaciones',
+       `${API_ENDPOINT}/cotizaciones`,  
       newCotizacion
     );
     setCotizacion(cotizacion.data.cotizacion);
